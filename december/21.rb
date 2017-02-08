@@ -1,8 +1,10 @@
 require 'rspec'
 
-def sentence_reverser str
 
-end
+  def sentence_reverser str
+    str.split.reverse.join(' ')
+  end
+
 
 describe "Sentence reverser" do
   it 'reverses the words in a sentence' do

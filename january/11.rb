@@ -2,6 +2,7 @@ require 'rspec'
 
 class Array
   def odd_selector
+  	select(&:odd?)
   end
 end
 
@@ -10,3 +11,6 @@ describe 'Odd selector' do
     expect(Array(1..10).odd_selector).to eq([1, 3, 5, 7, 9])
   end
 end
+
+arr = Array(1..10)
+arr.odd_selector
